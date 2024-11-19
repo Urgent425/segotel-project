@@ -1,0 +1,2 @@
+# segotel-project
+SEGOTEL API
