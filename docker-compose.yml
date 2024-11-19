@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: C:\Users\DacelyB\OneDrive\Documents\University of People\Books\5910-01 Capstone Project\SEGOTEL_PROJECT\segotel_api/Dockerfile.dockerfile  # Specify the relative path to your Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_APP=run.py
+      - FLASK_ENV=development
+    volumes:
+      - .:/app
+    command: flask run --host=0.0.0.0 --port=5000
